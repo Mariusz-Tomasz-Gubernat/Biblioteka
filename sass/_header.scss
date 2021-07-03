@@ -1,0 +1,52 @@
+/* <header>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Roman_Dmowski.jpg" class="d-block w-100" alt="Roman Dmowski">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/wojciech-kwasieborski.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Maksymilian-Maria-Kolbe.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MWorzel.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </header>*/
+
+header {
+    width: 100%;
+    height: 100vh;
+
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                position: relative;
+                height: 100vh;
+                background-color: rgb(26, 26, 26);
+
+                img {
+                    height: 100%;
+                }
+
+                .slide-text {
+                    padding: 25px;
+                    border-radius: 15%;
+                    background-color: rgba(119, 136, 153, 0.15);
+                    width: 30%;
+                    font-size: 24px;
+                    letter-spacing: 1.5px;
+                    line-height: 35px;
+                    z-index: 100;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

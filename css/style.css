@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  color: whitesmoke;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 100px;
+  font-size: 50px;
+  width: max-content;
+}
+
+.section-title::after {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 12px;
+  background-image: linear-gradient(white 50%, red 50%);
+}
+
+section {
+  margin-top: 200px;
+}
+
+/* <header>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Roman_Dmowski.jpg" class="d-block w-100" alt="Roman Dmowski">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/wojciech-kwasieborski.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Maksymilian-Maria-Kolbe.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MWorzel.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </header>*/
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+header .carousel .carousel-inner .carousel-item {
+  position: relative;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+header .carousel .carousel-inner .carousel-item img {
+  height: 100%;
+}
+
+header .carousel .carousel-inner .carousel-item .slide-text {
+  padding: 25px;
+  border-radius: 15%;
+  background-color: rgba(119, 136, 153, 0.15);
+  width: 30%;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  line-height: 35px;
+  z-index: 100;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  color: white;
+}
+
+.rules {
+  padding: 0 80px;
+}
+
+.rules .section-title {
+  margin-left: -60px;
+}
+
+.rules .rule-text {
+  padding: 15px;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 1.5px;
+}
+
+.books {
+  margin-bottom: 300px;
+}
+
+.books .section-title {
+  margin-left: 0;
+}
+
+.books .books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.books .books-container .book-column {
+  position: relative;
+  margin-top: 100px;
+  width: 30%;
+  height: 300px;
+  background-color: royalblue;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.books .books-container .book-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.books .books-container .book-column .book-title {
+  padding: 150px 20px;
+  background-color: rgba(119, 136, 153, 0.5);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  text-align: center;
+  z-index: 10;
+  color: whitesmoke;
+  font-size: 25px;
+  text-decoration: none;
+  display: none;
+}
+
+.books .book-column:hover {
+  transform: scale(1.1);
+}
+
+.books .book-column:hover .book-title {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
