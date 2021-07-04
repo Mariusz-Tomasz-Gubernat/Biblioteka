@@ -4,7 +4,7 @@ font-family: 'Sawarabi Mincho', sans-serif;
 font-family: 'Tangerine', cursive;*/
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body { width: 1400px; margin: 0 auto; background-color: #1a1a1a; color: whitesmoke; font-family: 'Sawarabi Mincho', sans-serif; }
+body { max-width: 1400px; margin: 0 auto; background-color: #1a1a1a; color: whitesmoke; font-family: 'Sawarabi Mincho', sans-serif; }
 
 .section-title { position: relative; margin-bottom: 100px; font-size: 50px; width: max-content; font-family: 'Brygada 1918', serif; }
 
