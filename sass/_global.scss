@@ -8,6 +8,10 @@ font-family: 'Tangerine', cursive;*/
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 1400px;
     margin: 0 auto;

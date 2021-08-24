@@ -1,3 +1,7 @@
+.chapter-container {
+    display: none;
+}
+
 .book-topBar {
     margin-top: 50px;
     margin-bottom: 200px;
@@ -28,19 +32,42 @@
     }
 }
 
-.chapter-content {
-    width: 80%;
-    margin: 50px auto;
-    font-size: 22px;
-    line-height: 40px;
-    letter-spacing: 1.5px;
-}
 
-.chapter-content::first-letter {
-    margin-left: 80px;
-}
+.book-content-container {
 
-.chapter-content-to-right {
-    margin: 0px auto;
-    text-align: right;
+    .section-title {
+        cursor: pointer;
+    }
+
+    .centered-text {
+        padding-top: 100px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-subtitle {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .chapter-content {
+        width: 80%;
+        margin: 50px auto;
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 1.5px;
+    }
+
+    .chapter-container.active {
+        display: block;
+    }
+
+    .chapter-content::first-letter {
+        margin-left: 80px;
+    }
+
+    .chapter-content-to-right {
+        margin: 0px auto;
+        text-align: right;
+    }
 }
