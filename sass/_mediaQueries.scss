@@ -1,3 +1,29 @@
+@media (max-width:1050px) {
+    .book-topBar {
+        margin-top: 0;
+
+        img {
+            width: 100%;
+        }
+
+        .book-topBar-content {
+            width: 100%;
+            margin: 100px 50px;
+        }
+    }
+
+    .book-content-container {
+        .section-title {
+            padding-left: 0;
+            margin: 100px auto;
+        }
+
+        .tab {
+            padding-right: 25px;
+        }
+    }
+}
+
 @media (max-width:850px) {
     .section-title {
         font-size: 40px;
@@ -17,6 +43,13 @@
         }
     }
 
+    .book-topBar {
+        .book-topBar-content {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
     .rules {
         .rule-text {
             padding: 10px 15px;
@@ -27,10 +60,32 @@
             }
         }
     }
+
+    .book-content-container {
+        .section-title {
+            font-size: 35px;
+        }
+
+        .section-subtitle {
+            font-size: 15px;
+        }
+
+        .chapter-content {
+            font-size: 20px;
+        }
+
+        .inside-navigation {
+
+            a {
+                padding: 15px 30px;
+                margin: 10px 10px;
+            }
+        }
+    }
 }
 
 
-@media (max-width:650px) {
+@media (max-width:675px) {
     .section-title {
         font-size: 25px;
         margin-bottom: 60px;
@@ -78,6 +133,53 @@
     .section-title::after {
         bottom: -15px;
         height: 8px;
+    }
+
+    .book-content-container {
+        .section-title {
+            font-size: 25px;
+            padding-left: 0;
+            margin: 50px auto;
+        }
+
+        .section-subtitle {
+            font-size: 15px;
+        }
+
+        .tab,
+        .inside-navigation a {
+            font-size: 20px;
+        }
+
+        .tab {
+            padding-right: 25px;
+        }
+
+        .chapter-content {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .chapter-content::first-letter {
+            margin-left: 0;
+        }
+    }
+
+    .book-topBar {
+        img {
+            width: auto;
+            height: 100vh;
+            margin: 0 auto;
+        }
+
+        .book-topBar-content {
+            width: 100%;
+            margin: 100px 50px;
+        }
+
+        .section-title {
+            margin: 70px 0 0;
+        }
     }
 }
 
@@ -130,6 +232,57 @@
             }
         }
     }
+
+    .book-topBar {
+        margin-top: 0;
+        margin-bottom: 100px;
+
+        .section-title {
+            margin: 50px 0;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .book-topBar-content {
+            width: 100%;
+            margin: 100px 10px;
+            border-radius: 10%;
+            padding: 60px 20px;
+        }
+
+    }
+
+    .book-content-container {
+        .section-title {
+            font-size: 18px;
+        }
+
+        .section-subtitle {
+            font-size: 10px;
+        }
+
+        .tab,
+        .inside-navigation a {
+            font-size: 16px;
+        }
+
+        .inside-navigation {
+
+            a {
+                padding: 10px 20px;
+                margin: 5px 5px;
+            }
+        }
+
+        .chapter-content {
+            font-size: 14px;
+        }
+    }
 }
 
 @media (max-width:320px) {
@@ -143,6 +296,20 @@
                     }
                 }
             }
+        }
+    }
+
+    .book-topBar {
+        .book-topBar-content {
+            font-size: 23px;
+        }
+    }
+
+    .book-content-container {
+        .section-title {
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
         }
     }
 }

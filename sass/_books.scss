@@ -9,7 +9,9 @@
     flex-wrap: wrap;
 
     img {
+        width: 50%;
         border-radius: 30px;
+        box-shadow: 0 0 1em whitesmoke;
     }
 
     .book-topBar-content {
@@ -21,12 +23,13 @@
         padding: 60px;
         border-radius: 30%;
         border: 2px solid gold;
+        box-shadow: 0 0 1em gold;
         height: fit-content;
         font-family: 'Tangerine', cursive;
     }
 
     .section-title {
-        margin-top: 120px;
+        margin: 120px 0 100px;
         text-align: center;
         width: 100%;
     }
@@ -35,14 +38,43 @@
 
 .book-content-container {
 
+    .tab,
+    .inside-navigation a {
+        color: whitesmoke;
+        font-size: 40px;
+    }
+
+    .inside-navigation {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: 0 auto;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: rgba(255, 0, 0, 0.25);
+            border-radius: 50%;
+            padding: 20px 40px;
+        }
+    }
+
+    .tab {
+        text-align: right;
+        border-bottom: 3px solid rgba(255, 0, 0, 0.25);
+    }
+
     .section-title {
         cursor: pointer;
+        padding-left: 20px;
     }
 
     .centered-text {
         padding-top: 100px;
         width: 100%;
         text-align: center;
+        cursor: default;
     }
 
     .section-subtitle {
