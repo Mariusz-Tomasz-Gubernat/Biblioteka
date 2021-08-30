@@ -82,6 +82,11 @@
             }
         }
     }
+
+    .note-modal {
+        padding: 30px;
+        font-size: 20px;
+    }
 }
 
 
@@ -179,6 +184,15 @@
 
         .section-title {
             margin: 70px 0 0;
+        }
+    }
+
+    .note-modal {
+        padding: 10px;
+        font-size: 16px;
+
+        .fa-times {
+            font-size: 35px;
         }
     }
 }
@@ -281,6 +295,15 @@
 
         .chapter-content {
             font-size: 14px;
+        }
+    }
+
+    .note-modal {
+        padding: 10px;
+        font-size: 12px;
+
+        .fa-times {
+            font-size: 35px;
         }
     }
 }

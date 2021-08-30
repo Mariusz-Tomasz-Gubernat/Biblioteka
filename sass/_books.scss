@@ -88,6 +88,15 @@
         font-size: 22px;
         line-height: 40px;
         letter-spacing: 1.5px;
+
+        .note {
+            color: lightsteelblue;
+            cursor: pointer;
+        }
+
+        .note.active {
+            color: rgba(245, 245, 245, 0.5);
+        }
     }
 
     .chapter-container.active {
@@ -101,5 +110,55 @@
     .chapter-content-to-right {
         margin: 0px auto;
         text-align: right;
+    }
+}
+
+
+
+
+
+.note-modal {
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 100px;
+    opacity: 0;
+    z-index: 10;
+    display: none;
+    width: 80%;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+
+    .fa-times {
+        position: fixed;
+        top: -20px;
+        left: 50%;
+        font-size: 50px;
+        cursor: pointer;
+    }
+}
+
+
+.note-modal.active {
+    display: block;
+    animation: showModal 0.3s linear both;
+}
+
+@keyframes showModal {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+
+    10% {
+        top: 50%;
+    }
+
+    100% {
+        top: 50%;
+        opacity: 1;
     }
 }
