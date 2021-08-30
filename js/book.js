@@ -3,7 +3,7 @@ const titlesOfChapters = document.querySelectorAll('.book-content-container .sec
     chapterClassname = "chapter-container",
     notes = document.querySelectorAll('.note'),
     noteModals = document.querySelectorAll('.note-modal'),
-    closeModal = document.querySelector('.fa-times');
+    closeModals = document.querySelectorAll('.fa-times');
 
 for (let titleOfChapter of titlesOfChapters) {
     document.querySelector('.book-content-container .section-title');
@@ -43,10 +43,14 @@ for (let note of notes) {
                 noteModal.classList.toggle('active');
                 note.classList.toggle('active');
             }
-            closeModal.addEventListener('click', function () {
-                note.classList.remove('active');
-                noteModal.classList.remove('active');
-            });
+            for (let closeModal of closeModals) {
+                document.querySelector('.fa-times')
+
+                closeModal.addEventListener('click', function () {
+                    note.classList.remove('active');
+                    noteModal.classList.remove('active');
+                });
+            }
         }
     });
 }
